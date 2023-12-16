@@ -1,0 +1,35 @@
+﻿<Window x:Class="livecharts_demo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:prism="http://prismlibrary.com/"
+        prism:ViewModelLocator.AutoWireViewModel="True"
+        mc:Ignorable="d"
+        Title="LiveCharts Demonstration" Height="720" Width="1280">
+
+    <Grid Margin="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <GroupBox Grid.Column="0"
+                  Header="Line Chart"
+                  Padding="5"
+                  Margin="0 0 10 0">
+
+            <ContentControl prism:RegionManager.RegionName="ContentRegionA"/>
+        
+        </GroupBox>
+
+        <GroupBox Grid.Column="1"
+                  Header="Histogram"
+                  Padding="5"
+                  Margin="10 0 0 0">
+
+            <ContentControl prism:RegionManager.RegionName="ContentRegionB"/>
+
+        </GroupBox>
+    </Grid>
+</Window>
